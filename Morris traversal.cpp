@@ -14,7 +14,7 @@ vector<int> inorder;
   else
   {
   TreeNode*prev=curr->left;
-    while(prv->right&&prev->right!=curr)
+    while(prev->right&&prev->right!=curr)
       prev=prev->right;
     
     if(prev->right==NULL)
